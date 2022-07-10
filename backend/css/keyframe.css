@@ -1,0 +1,141 @@
+@keyframes pullDown {
+    0% {
+        transform: scaleY(0.1)
+    }
+    40% {
+        transform: scaleY(1.02)
+    }
+    60% {
+        transform: scaleY(0.98)
+    }
+    80% {
+        transform: scaleY(1.01)
+    }
+    100% {
+        transform: scaleY(0.98)
+    }
+    80% {
+        transform: scaleY(1.01)
+    }
+    100% {
+        transform: scaleY(1)
+    }
+}
+
+@-webkit-keyframes pullDown {
+    0% {
+        -webkit-transform: scaleY(0.1)
+    }
+    40% {
+        -webkit-transform: scaleY(1.02)
+    }
+    60% {
+        -webkit-transform: scaleY(0.98)
+    }
+    80% {
+        -webkit-transform: scaleY(1.01)
+    }
+    100% {
+        -webkit-transform: scaleY(0.98)
+    }
+    80% {
+        -webkit-transform: scaleY(1.01)
+    }
+    100% {
+        -webkit-transform: scaleY(1)
+    }
+}
+
+@keyframes dashed_border_running {
+    100% {
+        stroke-dashoffset: -1000;
+    }
+}
+@-webkit-keyframes stretchdelay {
+    0%, 40%, 100% {
+        -webkit-transform: scaleY(0.4)
+    }
+    20% {
+        -webkit-transform: scaleY(1.0)
+    }
+}
+
+@keyframes pulse {
+    0%, 8% {
+        transform: scale(1);
+        opacity: 0
+    }
+    15% {
+        transform: scale(1.1);
+        opacity: 1
+    }
+    30% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        transform: scale(2)
+    }
+}
+
+@keyframes pulse2 {
+    0%, 8% {
+        -webkit-transform: scale(1);
+        transform: scale(1);
+        opacity: 0
+    }
+    15% {
+        -webkit-transform: scale(1.1);
+        transform: scale(1.1);
+        opacity: 1
+    }
+    30% {
+        -webkit-transform: scale(1.3);
+        transform: scale(1.3);
+        opacity: 1
+    }
+    100% {
+        opacity: 0;
+        -webkit-transform: scale(2);
+        transform: scale(2)
+    }
+}
+
+@keyframes move-animation1 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-40px);
+    }
+}
+
+@keyframes move-animation2 {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(30px);
+    }
+}
+
+@keyframes move-animation3 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(40px);
+    }
+}
+
+@keyframes move-animation4 {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-40px);
+    }
+}

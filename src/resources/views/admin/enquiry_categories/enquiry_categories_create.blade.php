@@ -1,0 +1,62 @@
+@extends('layouts.adminmaster')
+@section('title', 'Category')
+@section('content')
+
+<div class="right-details-box">
+            <div class="home_brics_row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dash_boxcontainner white_boxlist">
+                            <div class="upper_basic_heading">
+                                <span class="white_dash_head_txt">Add New category <a href="{{ url('admin/enquiry_categories') }}" class="btn margin0 btn-sm btn-mdb-color single-table-btn float-right waves-effect waves-light" ><i class="mdi mdi-arrow-left mr-1"></i>Back</a> </span>
+                            </div>
+                            <div class="panel-body dash_table_containner">
+                            @if($message=Session::get('success'))
+                            <div class="alert alert-success">
+                              <p>{{ $message }}</p>
+                            </div>
+                            @endif
+                            <div class="col-md-12">
+                            <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" action="{{ route('enquiry_categories.store') }}" method = "post" enctype="multipart/form-data">
+                                <input type = "hidden" name = "_token" value = "<?php echo csrf_token(); ?>">
+
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="category">Category <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <input type="text"  id="category" name="category" value="{{ old('category') }}" placeholder="Enter category"  class="form-control col-md-7 col-xs-12">
+                                    <span class="text text-danger"> @if ($errors->has('category')){{ $errors->first('category') }} @endif</span>
+                                  </div>
+                                </div>
+
+                        
+                                <div class="form-group">
+                                  <label class="control-label col-md-3 col-sm-3 col-xs-12" for="is_active">Status <span class="required">*</span>
+                                  </label>
+                                  <div class="col-md-12 col-sm-12 col-xs-12">
+                                    <select name="is_active" class="form-control col-md-7 col-xs-12" id="status">
+                                        <option value="1" {{ old('is_active') == '1'? 'selected' : '' }} >Active</option>
+                                        <option value="0" {{ old('is_active') == '0' ? 'selected' : '' }}>Deactive</option>
+                                    </select>
+                                    <span class="text text-danger"> @if ($errors->has('is_active')){{ $errors->first('is_active') }} @endif</span>
+                                  </div>
+                                </div>
+                            
+                              
+                                <div class="ln_solid"></div>
+                                <div class="form-group">
+                                  <div class="col-md-12 col-sm-12 col-xs-12 col-md-offset-3">
+                                    <button type="submit" class="btn btn-success">Save</button>
+                                  </div>
+                                </div>
+
+                              </form>
+                            </div>
+                            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+@endsection

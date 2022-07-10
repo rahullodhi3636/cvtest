@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/fevicon-icon.png" type="image/x-icon"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/mdb.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/materialdesignicons.css" type="text/css"/>
+    <link rel="stylesheet" href="css/additional.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animation-scroll.css" type="text/css"/>
+    <link href="css/keyframe.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/media.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Supermercado+One"
+          rel="stylesheet"/>
+    <link rel='stylesheet' id='nd_options_font_family_h-css'
+          href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;ver=4.9.4' type='text/css'
+          media='all'/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet"/>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<main>
+    <div class="main-preloader active" id="mainloader">
+        <div class="fl spinner6">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <header class="menu_header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <a href="index.html" class="logo-block">
+                            <img src="images/logo-cstestseries3.png">
+                        </a>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="top-content">
+                            <div class="top-contact-block">
+                                <a class="top-contact" href="tel:7047777111"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-7047777111
+                                        Customer support
+                                    </div>
+                                </a>
+                                <a class="top-contact" href="tel:9179999557"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-9179999557 Work with us</div>
+                                </a>
+                                <a class="top-contact" href="tel:8982459004"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-8982459004 Video classes</div>
+                                </a></div>
+                            <div class="top-contact-block">
+                                <a class="top-contact" href="mailto:admin@cstestseries.com">
+                                    <i class="mdi mdi-email-open mr-2"></i>admin@cstestseries.com
+                                    <div class="support-txt">Any query for cstestseries</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="top_social_iconbox">
+                            <a href="https://www.facebook.com/cstestseries/" type="button"
+                               class="btn-floating btn-sm btn-fb waves-effect waves-light"><i
+                                    class="mdi mdi-facebook"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=917047777111&amp;text=Sir%20I%20am%20a%20CS%20Aspirant.%20Please%20add%20me%20to%20cstestseries%20group&amp;source=&amp;data="
+                               target="_blank" type="button"
+                               class="btn-floating btn-sm btn-whatsapp waves-effect waves-light"><i
+                                    class="mdi mdi-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/cstestseries/?hl=en" type="button"
+                               class="btn-floating btn-sm btn-ins waves-effect waves-light"><i
+                                    class="mdi mdi-instagram"></i></a>
+
+                            <a href="https://www.youtube.com/channel/UCNhJTVvITWzPb0qd4vnPfOA" type="button"
+                               class="btn-floating btn-sm btn-yt mr-0 waves-effect waves-light"><i
+                                    class="mdi mdi-youtube"></i></a>
+                            <div class="user-baskitbox" onclick="viewcard();">
+                                <i class="mdi mdi-basket"></i>
+                                <span class="counter">3</span>
+                            </div>
+                            <div class="user-like-box" onclick="viewlike();">
+                                <i class="mdi mdi-heart-multiple-outline"></i>
+                                <span class="counter">5</span>
+                            </div>
+                        </div>
+                        <div class="nav_icon_withtxt"><i class="mdi mdi-account-circle-outline"
+                                                         style="display: none;"></i><span
+                                class="btn btn-sm btn-login text-white"
+                                onclick="openloginregistration('login');">Login</span>
+                            <span class="btn btn-sm btn-signup text-white"
+                                  onclick="openloginregistration('registration');">Register</span>
+                        </div>
+                        <div class="user-login-block dropdown show" style="display: none">
+                            <div class="user-login">AS</div>
+                            <div class="dropdown-menu pullDown user-seting-popup" id="login-user-popup">
+                                <ul class="user_dw_menu list-unstyled">
+                                    <li>
+                                        <div class="heading-popup">Abhishek Sharma</div>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false;">
+                                            <i class="mdi mdi-monitor-dashboard"></i>Dashboard
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false;">
+                                            <i class="mdi mdi-face-profile"></i>Profile
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false;">
+                                            <i class="mdi mdi-settings"></i>Setting
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" onclick="return false;">
+                                            <i class="mdi mdi-logout"></i>Logout
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_nav_section">
+            <div class="container" id="top_navigation">
+                <div class="menus-block">
+                    <nav class="main-menu">
+                        <div class="res_menu_btn" onclick="ResponsiveMenu();">
+                            <i class="mdi mdi-menu"></i>
+                        </div>
+                        <ul class="top_menu_ul list-unstyled" id="res_menucontainer">
+                            <li class="active pl-0"><a href="#banner_slider"><i class="mdi mdi-home"></i>Home</a></li>
+                            <li><a href="#banner_slider"><i class="mdi mdi-account-box-outline"></i>About</a></li>
+                            <!--                            <li id="nav_about"><a href="#about-section">Schedule</a></li>-->
+                            <li id="nav_how"><a href="#fest-section"><i
+                                    class="mdi mdi-file-document-box-multiple-outline"></i>Test Series</a></li>
+                            <li id="nav_video"><a href="#sponser-section"><i class="mdi mdi-video"></i>Video Classes</a>
+                            </li>
+                            <li id="nav_books"><a href="#sponser-section"><i class="mdi mdi-book-open-page-variant"></i>Books</a>
+                            </li>
+                            <li id="nav_placement"><a href="#sponser-section"><i class="mdi mdi-file-account"></i>Placement
+                                Portal</a></li>
+                            <li id="nav_download"><a href="#sponser-section"><i
+                                    class="mdi mdi-download"></i>Download</a></li>
+                            <li id="nav_sell"><a href="#sponser-section"><i class="mdi mdi-hand"></i>Sell with us</a>
+                            </li>
+                            <li id="contact" class="last_afternone"><a href="#contact-section"><i
+                                    class="mdi mdi-contacts"></i>Contact</a></li>
+                            <!--                            <li id="download-app" class="last_afternone"><a href="#download-app"><i-->
+                            <!--                                    class="mdi mdi-android"></i>Download App</a></li>-->
+                        </ul>
+                        <div class="menu_overlay" id="menu_overlay_div" onclick="ResponsiveMenu();"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="schedule-section">
+        <div class="container-fluid">
+            <div class="mt-4 mb-5 text-center aos-init aos-animate" data-aos="fade-down" data-aos-duration="1000">
+                <h5 class="pre-title">Full Syllabus Test Series</h5>
+                <h2 class="h1-responsive font-weight-bold text-center my-1">CS Test Series</h2>
+            </div>
+            <div class="test-series-container">
+                <div class="card product-block">
+                    <img src="images/test-series-img1.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img2.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img3.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img4.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img5.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img6.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img7.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img8.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,050.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img9.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,500.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+                <div class="card product-block">
+                    <img src="images/test-series-img10.png">
+                    <h4>CS PROFESSIONAL MODULE 1 FULL TEST OLD SYLLABUS FINAL TEST ALL 3 SUBJECTS</h4>
+                    <div class="product-amount"><i class="mdi mdi-currency-inr mr-1"></i><span class="amount-txt">1,050.00</span>
+                    </div>
+                    <del class="product-amount offer-txt"><i class="mdi mdi-currency-inr mr-1"></i><span
+                            class="amount-txt">1,500.00</span></del>
+                    <a href="images/schedule.pdf" target="_blank"
+                       class="mt-3 btn btn-sm theme_color waves-effect waves-light"><span
+                            class="mdi mdi-basket mr-1"></span>Add to cart</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="getstarted-section" data-aos="fade-up" data-aos-duration="1000">
+        <svg version="1.1" id="Svg1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+             x="0px" y="0px" width="2000px" height="500px" viewBox="0 0 2000 500" enable-background="new 0 0 2000 500"
+             xml:space="preserve">
+                    <g id="G1">
+                        <rect y="-37.262" fill="none" width="2000.002" height="537.262"></rect>
+
+                        <linearGradient id="LinearGradient1" gradientUnits="userSpaceOnUse" x1="2751.002"
+                                        y1="-9771.3145" x2="10065.4043" y2="-197.0801"
+                                        gradientTransform="matrix(0.072 0 0 -0.072 604.928 -18.9217)">
+                            <stop offset="0" style="stop-color: #1fbbd3"></stop>
+                            <stop offset="1" style="stop-color: #2096ff"></stop>
+                        </linearGradient>
+                        <path fill="url(#LinearGradient1)" d="M1904.314,78.802L0,353.48V500h2000.002l-61.056-386.639
+		C1935.994,94.569,1923.178,76.065,1904.314,78.802z"></path>
+                        <g id="_279499864">
+                            <g>
+                                <defs>
+                                    <polygon id="SVGID_2_"
+                                             points="228.167,5.29 1793.291,4.786 1793.291,402.656 228.167,403.088 				"></polygon>
+                                </defs>
+                                <clipPath id="SVGID_3_">
+                                    <use xlink:href="#SVGID_2_" overflow="visible"></use>
+                                </clipPath>
+                            </g>
+                        </g>
+                        <path fill="#f5f5ff" d="M269.782,377.168l1480.957-61.055c8.496-0.361,17.64-7.201,15.479-15.48l-50.903-192.887
+		c-2.159-8.208-6.983-15.12-15.407-15.48L330.838,31.21c-8.496-0.36-13.824,7.128-15.48,15.479l-61.056,314.998
+		C252.718,370.039,261.286,377.527,269.782,377.168z"></path>
+                    </g>
+                </svg>
+        <div class="footer-started-txt">
+            <h3 class="footer-started-head">Get Started Today</h3>
+            <p>Our dedicated team is always ready to provide you the best services related to
+                the field and help you to achieve your dream.</p>
+            <!--            <p class="footer-started-txt"><i class="mdi mdi-format-quote-open testmonial_quote"></i>What matters the-->
+            <!--                most is your satisfaction<i class="mdi mdi-format-quote-close testmonial_quote"></i></p>-->
+            <a class="btn theme_color"><i class="mdi mdi-send mr-1"></i>Register</a>
+        </div>
+    </section>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <div class="short_about_box">
+                        <h3 class="footer_titile">Get In Touch</h3>
+                        <ul class="list-unstyled footer_add_block">
+                            <li><i class="mdi mdi-map-marker-radius"></i>Jabalpur Madhya Pradesh India
+                            </li>
+                            <!--                            <li><i class="mdi mdi-phone"></i><a href="tel:7047777111" style="color: #d6d6d6;">-->
+                            <!--                                7047777111 Purchase Inquiry/customer support</a></li>-->
+                            <li><i class="mdi mdi-phone"></i><a href="tel:9179999557" style="color: #d6d6d6;">
+                                9179999557 Work with us</a></li>
+                            <li><i class="mdi mdi-phone"></i><a href="tel:8982459004" style="color: #d6d6d6;">
+                                8982459004 Query for Video classes</a></li>
+                            <li><i class="mdi mdi-email-open"></i>admin@cstestseries.com</li>
+                        </ul>
+
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-3 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="footer_titile">Services</h3>
+
+                    <ul class="list-unstyled footer_ul">
+                        <li><a href="#service-section"><i class="mdi mdi-arrow-right-bold bai"></i>Test Series</a></li>
+                        <li><a href="#service-section"><i class="mdi mdi-arrow-right-bold bai"></i>Video Classes</a>
+                        </li>
+                        <li><a href="#service-section"><i class="mdi mdi-arrow-right-bold bai"></i>Books</a></li>
+                        <li><a href="#service-section"><i class="mdi mdi-arrow-right-bold bai"></i>Planners</a></li>
+                        <li><a href="#service-section"><i class="mdi mdi-arrow-right-bold bai"></i>Placement</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-2 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="footer_titile">Useful Links</h3>
+                    <ul class="list-unstyled footer_ul">
+                        <li><a href="#banner_slider"><i class="mdi mdi-arrow-right-bold bai"></i>Home</a></li>
+                        <li><a href="#about-section"><i class="mdi mdi-arrow-right-bold bai"></i>About</a></li>
+                        <li><a href="#how-section"><i class="mdi mdi-arrow-right-bold bai"></i>Features</a></li>
+                        <li><a href="#testimonial-section"><i class="mdi mdi-arrow-right-bold bai"></i>Videos</a>
+                        </li>
+
+                        <li><a href="#contact-section"><i class="mdi mdi-arrow-right-bold bai"></i>Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-6 col-md-4 aos-init aos-animate" data-aos="fade-up" data-aos-duration="1000">
+                    <h3 class="footer_titile">Newsletter</h3>
+                    <div class="footer_sub_head">
+                        Give your email id to receive instant offers.
+                    </div>
+                    <div class="subscribe_txtbox">
+                        <input type="text" class="form-control" placeholder="Enter Email Id">
+                    </div>
+                    <div class="subs_btnbox mt-3">
+                        <button class="btn theme_color btn-block waves-effect waves-light" type="submit">Submit</button>
+                    </div>
+
+                </div>
+                <div class="col-sm-12" data-aos="fade-up" data-aos-duration="1200">
+                    <div class="footer-download-container">
+                        <div class="row ">
+                            <div class="col-sm-7"><span class="footer-bottom-div">Download Apps&nbsp;:&nbsp;</span>
+                                <span class="footer-category-text"><a class="footer-download"><i
+                                        class="mdi mdi-android"></i>Android App</a>&nbsp;&nbsp;|&nbsp;&nbsp; <a
+                                        class="footer-download" ng-target="_blank"><i
+                                        class="mdi mdi-cellphone-iphone"></i>iOS App</a></span></div>
+                            <div class="col-sm-5">
+                                <div class="online-support-box"><i class="mdi mdi-face-agent footer-support"></i><a
+                                        target="_blank">7047777111 - Online Support</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xs-12 coppyright">
+                    © 2019 All Rights Reserved. Powered by
+                    <a href="http://7eyeitsolutions.com/" target="_blank"><img src="images/logo-7eye.png"
+                                                                               class="logo_powered"></a>
+
+                    <div class="footer_social_iconbox">
+                        <a href="https://www.facebook.com/cstestseries/" type="button"
+                           class="btn-floating btn-sm btn-fb waves-effect waves-light"><i class="mdi mdi-facebook"></i></a>
+                        <a href="https://api.whatsapp.com/send?phone=917047777111&amp;text=Sir%20I%20am%20a%20CS%20Aspirant.%20Please%20add%20me%20to%20cstestseries%20group&amp;source=&amp;data="
+                           target="_blank" type="button"
+                           class="btn-floating btn-sm btn-whatsapp waves-effect waves-light"><i
+                                class="mdi mdi-whatsapp"></i></a>
+                        <a href="https://www.instagram.com/cstestseries/?hl=en" type="button"
+                           class="btn-floating btn-sm btn-ins waves-effect waves-light"><i
+                                class="mdi mdi-instagram"></i></a>
+                        <a type="button" class="btn-floating btn-sm btn-li waves-effect waves-light"><i
+                                class="mdi mdi-linkedin"></i></a>
+                        <a href="https://www.youtube.com/channel/UCNhJTVvITWzPb0qd4vnPfOA" type="button"
+                           class="btn-floating btn-sm btn-yt mr-0 waves-effect waves-light"><i
+                                class="mdi mdi-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal fade" id="login-signup-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         aria-hidden="true">
+        <div class="modal-dialog cascading-modal" role="document">
+            <div class="modal-content">
+                <div class="login-form-box card">
+                    <div class="card-body" id="registration-tabs" style="display: none;">
+                        <h5 class="main-heading mb-3">Quick one stap to login</h5>
+                        <div class="login-row">
+                            <button class="btn btn-rounded btn-block login-btn google-btn login-btn btn-fb waves-effect z-depth-0"
+                                    type="submit"><i class="mdi mdi-facebook"></i>Sign in with Facebook
+                            </button>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="or_border">OR</div>
+                        </div>
+                        <div class="login-row">
+                            <button class="btn  btn-rounded btn-block login-btn login-btn btn-gplus waves-effect z-depth-0"
+                                    type="submit"><i class="mdi mdi-google "></i>Sign in with Google
+                            </button>
+                        </div>
+                        <div class="form-group mt-3">
+                            <div class="or_border">OR</div>
+                        </div>
+                        <div class="login-row">
+                            <button class="btn btn-outline-info btn-rounded btn-block login-btn google-btn waves-effect z-depth-0"
+                                    type="submit"><i class="mdi mdi-email"></i>Register with Email
+                            </button>
+                        </div>
+                        <div class="already-login-row">
+                            <b>Already have an account?
+                                <a onclick="openlogintab()" style="color: #07d;">Login</a>
+                            </b>
+                        </div>
+                    </div>
+                    <div class="card-body pt-0" id="login-tabs" style="">
+                        <form class="text-center" action="#" method="get" id="login_form">
+                            <div class="logo-block mb-2">
+                                <img src="images/logo-cstestseries1.png">
+                            </div>
+                            <h5 class="main-heading">Welcome to CSTESTSERIES</h5>
+                            <div class="md-form">
+                                <input type="email" id="username" name="username" class="form-control" required="">
+                                <label for="username" class="">E-mail</label>
+                            </div>
+                            <div class="md-form">
+                                <input type="password" id="password" name="password" class="form-control" required="">
+                                <label for="password">Password</label>
+                            </div>
+                            <div class="md-form">
+                                <b>
+                                    <a href="#forgot_password" data-toggle="modal" style="color: #07d;">Forgot
+                                        password?</a></b>
+                            </div>
+                            <button type="submit"
+                                    class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0">
+                                Sign in
+                            </button>
+                            <div class="already-login-row">
+                                <b>Not a member?
+                                    <a onclick="opensignuptab()" style="color: #07d;">Sign Up</a>
+                                </b>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade right" id="mycard-popup" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" data-backdrop="true" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right modal-card modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead py-0">My Cart (3 items)</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <div class="cart-modalbody">
+                    <div class="cart-store-details">
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">M.R.P</div>
+                            <div class="cartstore-totalprice float-right">₹556</div>
+                        </div>
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">Delivery Charges</div>
+                            <div class="cartstore-totalprice float-right">
+                                + ₹20
+                            </div>
+                        </div>
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">Sub Total</div>
+                            <div class="cartstore-totalprice float-right">₹500</div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="cart-store-total-savings dispclear">
+                        <div class="cartstore-name float-left">Your total savings</div>
+                        <div class="cartstore-totalprice float-right text-success">
+                            ₹72.28
+                            (13%)
+                        </div>
+                    </div>
+                    <div class="cart-items-container">
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg1.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 480.00</span>
+                                    <span class="cartold-price">₹ 539.00</span>
+                                    <div class="carttotel-price float-right">₹480</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg12.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 120.00</span>
+                                    <span class="cartold-price">₹ 139.00</span>
+                                    <div class="carttotel-price float-right">₹120</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="cartpromo">
+                        Promo code can be applied on payment page
+                    </small>
+                    <a type="button" class="btn btn-info btn-block waves-effect waves-light">Proceed to Checkout : ₹500
+                        <i class="mdi mdi-chevron-right pull-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade right" id="mylike-popup" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" data-backdrop="true" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-card modal-right modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead">You Like (2 items)</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <div class="cart-modalbody">
+                    <div class="cart-items-container">
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg1.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 480.00</span>
+                                    <span class="cartold-price">₹ 539.00</span>
+                                    <div class="carttotel-price float-right">₹480</div>
+                                </div>
+                                <div class="addtocardbtnbox">
+                                    <button class="btn btn-sm btn-outline-blue ml-0 mb-0 pl-2 pr-2 waves-effect waves-light">
+                                        <i class="mdi mdi-basket mr-2"></i>Add to card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg12.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 120.00</span>
+                                    <span class="cartold-price">₹ 139.00</span>
+                                    <div class="carttotel-price float-right">₹120</div>
+                                </div>
+                                <div class="addtocardbtnbox">
+                                    <button class="btn btn-sm btn-outline-blue ml-0 mb-0 pl-2 pr-2 waves-effect waves-light">
+                                        <i class="mdi mdi-basket mr-2"></i>Add to card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-right ">
+                    <button type="button" class="btn-sm btn btn-secondary waves-effect waves-light"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                    <a type="button" class="btn-sm btn btn-info waves-effect waves-light">
+                        <i class="mdi mdi-basket mr-1"></i> Move to Card
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show" id="forgot_password" role="dialog" style="padding-right: 17px; display: none;"
+         aria-modal="true" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content m_login">
+                <div class="modal-body">
+                    <h5 class="card-header info-color white-text text-center">
+                        <strong>Forgot Password ?</strong>
+                    </h5>
+                    <div class="md-form">
+                        <input type="email" id="forgot_email" name="forgot_email" class="form-control" required="">
+                        <label for="forgot_email">Email</label>
+                    </div>
+                    <button type="submit"
+                            class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0">Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<script type="text/javascript" src="js/animate-scroll.js"></script>
+<script type="text/javascript">
+    function openloginregistration(action) {
+        if (action == 'login') {
+            $('#registration-tabs').hide();
+            $('#login-tabs').show();
+        } else {
+            $('#login-tabs').hide();
+            $('#registration-tabs').show();
+        }
+        $('#login-signup-modal').modal('show');
+    }
+
+    function openlogintab() {
+        $('#registration-tabs').slideUp();
+        $('#login-tabs').slideDown();
+    }
+
+    function opensignuptab() {
+        $('#login-tabs').slideUp();
+        $('#registration-tabs').slideDown();
+    }
+
+    function viewcard() {
+        $('#mycard-popup').modal('show');
+    }
+
+    function viewlike() {
+        $('#mylike-popup').modal('show');
+    }
+
+    function showfaq(dis, action_this) {
+        $('.tabs-block').removeClass('selected-faq');
+        $('.faq-tabs').slideUp();
+        $(dis).addClass('selected-faq');
+        $('#' + action_this).slideDown();
+    }
+
+    window.onload = function (e) {
+        setTimeout(function () {
+            //$('#loader-overlay').addClass('scale0');
+            $('#mainloader').hide();
+        }, 2000);
+    }
+    window.onscroll = function () {
+        //scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 20) {
+            $('#top_navigation_bar').addClass('logowithmenu_bar_fixed');
+        } else {
+            $('#top_navigation_bar').removeClass('logowithmenu_bar_fixed');
+        }
+    }
+
+    $(document).click(function (e) {
+        $('#login-user-popup').removeClass('show');
+        $('#support-user-popup').removeClass('show');
+        //$('#view-setting-page').removeClass('show');
+        //$('#advance-search-page').removeClass('show');
+    })
+    $(document).ready(function () {
+        AOS.init({
+            easing: 'ease-in-out-sine'
+        });
+        $('.support-block').click(function (e) {
+            $('#login-user-popup').removeClass('show');
+            let chkclass = $('#support-user-popup').attr('class');
+            if (chkclass == 'dropdown-menu pullDown user-seting-popup') {
+                $('#support-user-popup').addClass('show');
+            } else {
+                $('#support-user-popup').removeClass('show');
+            }
+            e.stopPropagation();
+        });
+        $('.user-login-block').click(function (e) {
+            $('#support-user-popup').removeClass('show');
+            let chkclass = $('#login-user-popup').attr('class');
+            if (chkclass == 'dropdown-menu pullDown user-seting-popup') {
+                $('#login-user-popup').addClass('show');
+            } else {
+                $('#login-user-popup').removeClass('show');
+            }
+            e.stopPropagation();
+        });
+
+        function moveToSelected(element) {
+            let selected = $("." + element);
+            if (element == "next") {
+                selected = $(".selected").next();
+            } else if (element == "prev") {
+                selected = $(".selected").prev();
+            }
+            let next = $(selected).next();
+            let prev = $(selected).prev();
+            let prevSecond = $(prev).prev();
+            let nextSecond = $(next).next();
+            $(selected).removeClass().addClass("selected");
+            $(prev).removeClass().addClass("prev");
+            $(next).removeClass().addClass("next2");
+            $(nextSecond).removeClass().addClass("nextRightSecond");
+            $(prevSecond).removeClass().addClass("prevLeftSecond");
+
+            $(nextSecond).nextAll().removeClass().addClass('hideRight');
+            $(prevSecond).prevAll().removeClass().addClass('hideLeft');
+
+            $(nextSecond).nextAll().removeClass().addClass('hideRight1');
+            $(prevSecond).prevAll().removeClass().addClass('hideLeft1');
+
+        }
+
+        $('#carousel div').click(function () {
+            moveToSelected($(this));
+        });
+
+        $('#prev').click(function () {
+            moveToSelected('prev');
+        });
+
+        $('#next').click(function () {
+            moveToSelected('next');
+        });
+    });
+</script>
+</body>
+</html>

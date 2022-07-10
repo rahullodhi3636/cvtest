@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en" class="js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <link rel="shortcut icon" href="images/fevicon-icon.png" type="image/x-icon"/>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="css/mdb.min.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="css/materialdesignicons.css" type="text/css"/>
+    <link rel="stylesheet" href="css/additional.css" type="text/css"/>
+    <link rel="stylesheet" href="css/animation-scroll.css" type="text/css"/>
+    <link href="css/keyframe.css" rel="stylesheet" type="text/css"/>
+    <link href="css/style.css" rel="stylesheet" type="text/css"/>
+    <link href="css/media.css" rel="stylesheet" type="text/css"/>
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i|Supermercado+One"
+          rel="stylesheet"/>
+    <link rel='stylesheet' id='nd_options_font_family_h-css'
+          href='http://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C700&#038;ver=4.9.4' type='text/css'
+          media='all'/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet"/>
+    <style type="text/css">
+
+    </style>
+</head>
+<body>
+<main>
+    <div class="main-preloader active" id="mainloader">
+        <div class="fl spinner6">
+            <div class="rect1"></div>
+            <div class="rect2"></div>
+            <div class="rect3"></div>
+            <div class="rect4"></div>
+            <div class="rect5"></div>
+        </div>
+    </div>
+    <header class="menu_header">
+        <div class="top-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="logo-block">
+                            <img src="images/logo-cstestseries3.png">
+                        </div>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="top-content">
+                            <div class="top-contact-block">
+                                <a class="top-contact" href="tel:7047777111"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-7047777111
+                                        Customer support
+                                    </div>
+                                </a>
+                                <a class="top-contact" href="tel:9179999557"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-9179999557 Work with us</div>
+                                </a>
+                                <a class="top-contact" href="tel:8982459004"><i class="mdi mdi-phone mr-2"></i>
+                                    <div class="support-txt">+91-8982459004 Video classes</div>
+                                </a></div>
+                            <div class="top-contact-block">
+                                <a class="top-contact" href="mailto:admin@cstestseries.com">
+                                    <i class="mdi mdi-email-open mr-2"></i>admin@cstestseries.com
+                                    <div class="support-txt">Any query for cstestseries</div>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="top_social_iconbox">
+                            <a href="https://www.facebook.com/cstestseries/" type="button"
+                               class="btn-floating btn-sm btn-fb waves-effect waves-light"><i
+                                    class="mdi mdi-facebook"></i></a>
+                            <a href="https://api.whatsapp.com/send?phone=917047777111&amp;text=Sir%20I%20am%20a%20CS%20Aspirant.%20Please%20add%20me%20to%20cstestseries%20group&amp;source=&amp;data="
+                               target="_blank" type="button"
+                               class="btn-floating btn-sm btn-whatsapp waves-effect waves-light"><i
+                                    class="mdi mdi-whatsapp"></i></a>
+                            <a href="https://www.instagram.com/cstestseries/?hl=en" type="button"
+                               class="btn-floating btn-sm btn-ins waves-effect waves-light"><i
+                                    class="mdi mdi-instagram"></i></a>
+
+                            <a href="https://www.youtube.com/channel/UCNhJTVvITWzPb0qd4vnPfOA" type="button"
+                               class="btn-floating btn-sm btn-yt mr-0 waves-effect waves-light"><i
+                                    class="mdi mdi-youtube"></i></a>
+                            <div class="user-baskitbox" onclick="viewcard();">
+                                <i class="mdi mdi-basket"></i>
+                                <span class="counter">3</span>
+                            </div>
+                            <div class="user-like-box" onclick="viewlike();">
+                                <i class="mdi mdi-heart-multiple-outline"></i>
+                                <span class="counter">5</span>
+                            </div>
+                        </div>
+                        <div class="nav_icon_withtxt"><i class="mdi mdi-account-circle-outline"
+                                                         style="display: none;"></i><span
+                                class="btn btn-sm btn-login text-white waves-effect waves-light"
+                                onclick="openloginregistration('login');" style="
+    display: none;
+">Login</span>
+                            <span class="btn btn-sm btn-signup text-white waves-effect waves-light"
+                                  onclick="openloginregistration('registration');" style="
+    display: none;
+">Register</span>
+                            <div class="user-login-block dropdown show" style="">
+                                <div class="user-login">AS</div>
+                                <div class="dropdown-menu pullDown user-seting-popup" id="login-user-popup">
+                                    <ul class="user_dw_menu list-unstyled">
+                                        <li>
+                                            <div class="heading-popup">Abhishek Sharma</div>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return false;">
+                                                <i class="mdi mdi-monitor-dashboard"></i>Dashboard
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return false;">
+                                                <i class="mdi mdi-face-profile"></i>Profile
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return false;">
+                                                <i class="mdi mdi-settings"></i>Setting
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" onclick="return false;">
+                                                <i class="mdi mdi-logout"></i>Logout
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="top_nav_section" style="display: none;">
+            <div class="container" id="top_navigation">
+                <div class="menus-block">
+                    <nav class="main-menu">
+                        <div class="res_menu_btn" onclick="ResponsiveMenu();">
+                            <i class="mdi mdi-menu"></i>
+                        </div>
+                        <ul class="top_menu_ul list-unstyled" id="res_menucontainer">
+                            <li class="active pl-0"><a href="#banner_slider"><i class="mdi mdi-home"></i>Home</a></li>
+                            <li><a href="#banner_slider"><i class="mdi mdi-account-box-outline"></i>About</a></li>
+                            <!--                            <li id="nav_about"><a href="#about-section">Schedule</a></li>-->
+                            <li id="nav_how"><a href="#fest-section"><i
+                                    class="mdi mdi-file-document-box-multiple-outline"></i>Test Series</a></li>
+                            <li id="nav_video"><a href="#sponser-section"><i class="mdi mdi-video"></i>Video Classes</a>
+                            </li>
+                            <li id="nav_books"><a href="#sponser-section"><i class="mdi mdi-book-open-page-variant"></i>Books</a>
+                            </li>
+                            <li id="nav_placement"><a href="#sponser-section"><i class="mdi mdi-file-account"></i>Placement
+                                Portal</a></li>
+                            <li id="nav_download"><a href="#sponser-section"><i
+                                    class="mdi mdi-download"></i>Download</a></li>
+                            <li id="nav_sell"><a href="#sponser-section"><i class="mdi mdi-hand"></i>Sell with us</a>
+                            </li>
+                            <li id="contact" class="last_afternone"><a href="#contact-section"><i
+                                    class="mdi mdi-contacts"></i>Contact</a></li>
+                        </ul>
+                        <div class="menu_overlay" id="menu_overlay_div" onclick="ResponsiveMenu();"></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="dashboard-section">
+        <div class="left-menubox style-scroll">
+            <div class="left-menucontainer">
+                <ul class="list-unstyled left-menu">
+                    <li>
+                        <a href="userdashboard.html" class="menu-box">
+                            <i class="mdi mdi-monitor-dashboard"></i>
+                            <h4>My Dashboard</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box">
+                            <i class="mdi mdi-account-card-details-outline"></i>
+                            <h4>My Profile</h4>
+                        </a>
+                    </li>
+                    <li >
+                        <a href="downloadupload.html" class="menu-box">
+                            <i class="mdi mdi-clipboard-account-outline"></i>
+                            <h4>Download &amp; Upload Test</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box">
+                            <i class="mdi mdi-chart-areaspline"></i>
+                            <h4>Overall Results</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box">
+                            <i class="mdi mdi-file-document-box-multiple-outline"></i>
+                            <h4>My Test Series</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu-box">
+                            <i class="mdi mdi-video-account"></i>
+                            <h4>My Video Courses</h4>
+                        </a>
+                    </li>
+                    <li class="menu_active">
+                        <a class="menu-box">
+                            <i class="mdi mdi-book-open-page-variant"></i>
+                            <h4>My E-Books</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="myorder.html" class="menu-box">
+                            <i class="mdi mdi-file-document-box-multiple-outline"></i>
+                            <h4>My Orders</h4>
+                        </a>
+                    </li>
+                    <li>
+                        <a data-toggle="modal" data-target="#student-instruction" class="menu-box">
+                            <i class="mdi mdi-account-alert-outline"></i>
+                            <h4>Student Instructions</h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-details-box">
+            <div class="home_brics_row">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="dash_boxcontainner white_boxlist">
+                            <div class="upper_basic_heading">
+                                <span class="white_dash_head_txt">My Books List</span>
+                            </div>
+                            <div class="panel-body dash_table_containner">
+                                <table class="table table-bordered table-hover grid-table">
+                                    <thead>
+                                    <tr class="tr-header globe-header-tr">
+                                        <th class="sno-width">S.no</th>
+                                        <th class="paper-name">Product Name</th>
+                                        <th >Book Date</th>
+                                        <th >Amount</th>
+                                        <th >Status</th>
+                                        <th>Download</th>
+                                        <th>Download Invoice</th>
+                                    </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                        <td class="tab-grid col1 sno-width" data-line="Order No.">1
+                                        </td>
+                                        <td class="tab-grid paper-name col8" data-line="Product Name">
+                                            <a class="view-hyperlink"
+                                               href="https://www.cstestseries.com/product/cs-executive-paper-1-jurisprudence-interpretation-general-laws-test-series/">
+                                                BEST SELLING BOOKS FOR CS STUDENTS BY MOHIT SHAW
+                                            </a>
+                                        </td>
+                                        <td class="tab-grid width_15 col3" data-line="Expires">
+                                            30-11-2019
+                                        </td>
+                                        <td class="tab-grid width_15 col4 text-right" data-line="Amount">499.00</td>
+                                        <td class="tab-grid width_15 col5" data-line="Status">
+                                            <div class="status pass">Delivered</div>
+                                        </td>
+                                        <td class="tab-grid col6" data-line="Download">
+                                            <a target="_blank" href="images/question-paper.pdf"
+                                               class="btn margin0 btn-sm btn-info single-table-btn"
+                                               type="button"><i class="mdi mdi-download mr-1"></i>Download
+                                            </a>
+                                        </td>
+                                        <td class="tab-grid col7" data-line="Details">
+                                            <a target="_blank" href="images/invoice.pdf"
+                                               class="btn margin0 btn-sm btn-yellow single-table-btn"
+                                               type="button"><i class="mdi mdi-file-pdf mr-1"></i>Invoice
+                                            </a>
+                                        </td>
+                                    </tr>
+                                        <tr>
+                                            <td class="tab-grid col1 sno-width" data-line="Order No.">1
+                                            </td>
+                                            <td class="tab-grid paper-name col8" data-line="Product Name">
+                                                <a class="view-hyperlink"
+                                                   href="https://www.cstestseries.com/product/cs-executive-paper-1-jurisprudence-interpretation-general-laws-test-series/">
+                                                    BEST SELLING BOOKS FOR CS STUDENTS BY MOHIT SHAW
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid width_15 col3" data-line="Expires">
+                                                30-11-2019
+                                            </td>
+                                            <td class="tab-grid width_15 col4 text-right" data-line="Amount">499.00</td>
+                                            <td class="tab-grid width_15 col5" data-line="Status">
+                                                <div class="status pass">Delivered</div>
+                                            </td>
+                                            <td class="tab-grid col6" data-line="Download">
+                                                <a target="_blank" href="images/question-paper.pdf"
+                                                   class="btn margin0 btn-sm btn-info single-table-btn"
+                                                   type="button"><i class="mdi mdi-download mr-1"></i>Download
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid col7" data-line="Details">
+                                                <a target="_blank" href="images/invoice.pdf"
+                                                   class="btn margin0 btn-sm btn-yellow single-table-btn"
+                                                   type="button"><i class="mdi mdi-file-pdf mr-1"></i>Invoice
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab-grid col1 sno-width" data-line="Order No.">1
+                                            </td>
+                                            <td class="tab-grid paper-name col8" data-line="Product Name">
+                                                <a class="view-hyperlink"
+                                                   href="https://www.cstestseries.com/product/cs-executive-paper-1-jurisprudence-interpretation-general-laws-test-series/">
+                                                    BEST SELLING BOOKS FOR CS STUDENTS BY MOHIT SHAW
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid width_15 col3" data-line="Expires">
+                                                30-11-2019
+                                            </td>
+                                            <td class="tab-grid width_15 col4 text-right" data-line="Amount">499.00</td>
+                                            <td class="tab-grid width_15 col5" data-line="Status">
+                                                <div class="status pass">Delivered</div>
+                                            </td>
+                                            <td class="tab-grid col6" data-line="Download">
+                                                <a target="_blank" href="images/question-paper.pdf"
+                                                   class="btn margin0 btn-sm btn-info single-table-btn"
+                                                   type="button"><i class="mdi mdi-download mr-1"></i>Download
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid col7" data-line="Details">
+                                                <a target="_blank" href="images/invoice.pdf"
+                                                   class="btn margin0 btn-sm btn-yellow single-table-btn"
+                                                   type="button"><i class="mdi mdi-file-pdf mr-1"></i>Invoice
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab-grid col1 sno-width" data-line="Order No.">1
+                                            </td>
+                                            <td class="tab-grid paper-name col8" data-line="Product Name">
+                                                <a class="view-hyperlink"
+                                                   href="https://www.cstestseries.com/product/cs-executive-paper-1-jurisprudence-interpretation-general-laws-test-series/">
+                                                    BEST SELLING BOOKS FOR CS STUDENTS BY MOHIT SHAW
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid width_15 col3" data-line="Expires">
+                                                30-11-2019
+                                            </td>
+                                            <td class="tab-grid width_15 col4 text-right" data-line="Amount">499.00</td>
+                                            <td class="tab-grid width_15 col5" data-line="Status">
+                                                <div class="status pass">Delivered</div>
+                                            </td>
+                                            <td class="tab-grid col6" data-line="Download">
+                                                <a target="_blank" href="images/question-paper.pdf"
+                                                   class="btn margin0 btn-sm btn-info single-table-btn"
+                                                   type="button"><i class="mdi mdi-download mr-1"></i>Download
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid col7" data-line="Details">
+                                                <a target="_blank" href="images/invoice.pdf"
+                                                   class="btn margin0 btn-sm btn-yellow single-table-btn"
+                                                   type="button"><i class="mdi mdi-file-pdf mr-1"></i>Invoice
+                                                </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="tab-grid col1 sno-width" data-line="Order No.">1
+                                            </td>
+                                            <td class="tab-grid paper-name col8" data-line="Product Name">
+                                                <a class="view-hyperlink"
+                                                   href="https://www.cstestseries.com/product/cs-executive-paper-1-jurisprudence-interpretation-general-laws-test-series/">
+                                                    BEST SELLING BOOKS FOR CS STUDENTS BY MOHIT SHAW
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid width_15 col3" data-line="Expires">
+                                                30-11-2019
+                                            </td>
+                                            <td class="tab-grid width_15 col4 text-right" data-line="Amount">499.00</td>
+                                            <td class="tab-grid width_15 col5" data-line="Status">
+                                                <div class="status pass">Delivered</div>
+                                            </td>
+                                            <td class="tab-grid col6" data-line="Download">
+                                                <a target="_blank" href="images/question-paper.pdf"
+                                                   class="btn margin0 btn-sm btn-info single-table-btn"
+                                                   type="button"><i class="mdi mdi-download mr-1"></i>Download
+                                                </a>
+                                            </td>
+                                            <td class="tab-grid col7" data-line="Details">
+                                                <a target="_blank" href="images/invoice.pdf"
+                                                   class="btn margin0 btn-sm btn-yellow single-table-btn"
+                                                   type="button"><i class="mdi mdi-file-pdf mr-1"></i>Invoice
+                                                </a>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal fade right" id="mycard-popup" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" data-backdrop="true" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-right modal-card modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead py-0">My Cart (3 items)</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <div class="cart-modalbody">
+                    <div class="cart-store-details">
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">M.R.P</div>
+                            <div class="cartstore-totalprice float-right">₹556</div>
+                        </div>
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">Delivery Charges</div>
+                            <div class="cartstore-totalprice float-right">
+                                + ₹20
+                            </div>
+                        </div>
+                        <div class="dispclear">
+                            <div class="cartstore-name float-left">Sub Total</div>
+                            <div class="cartstore-totalprice float-right">₹500</div>
+                        </div>
+                        <br>
+                    </div>
+                    <div class="cart-store-total-savings dispclear">
+                        <div class="cartstore-name float-left">Your total savings</div>
+                        <div class="cartstore-totalprice float-right text-success">
+                            ₹72.28
+                            (13%)
+                        </div>
+                    </div>
+                    <div class="cart-items-container">
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg1.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 480.00</span>
+                                    <span class="cartold-price">₹ 539.00</span>
+                                    <div class="carttotel-price float-right">₹480</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg12.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 120.00</span>
+                                    <span class="cartold-price">₹ 139.00</span>
+                                    <div class="carttotel-price float-right">₹120</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <small class="cartpromo">
+                        Promo code can be applied on payment page
+                    </small>
+                    <a type="button" class="btn btn-info btn-block waves-effect waves-light">Proceed to Checkout : ₹500
+                        <i class="mdi mdi-chevron-right pull-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade right" id="mylike-popup" tabindex="-1" role="dialog"
+         aria-labelledby="myModalLabel" data-backdrop="true" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-card modal-right modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <p class="heading lead">You Like (2 items)</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <div class="cart-modalbody">
+                    <div class="cart-items-container">
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg1.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 480.00</span>
+                                    <span class="cartold-price">₹ 539.00</span>
+                                    <div class="carttotel-price float-right">₹480</div>
+                                </div>
+                                <div class="addtocardbtnbox">
+                                    <button class="btn btn-sm btn-outline-blue ml-0 mb-0 pl-2 pr-2 waves-effect waves-light">
+                                        <i class="mdi mdi-basket mr-2"></i>Add to card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart-items-row">
+                            <div class="cart-product_img">
+                                <img src="images/our-productimg12.jpg" class="img-loader_img">
+                            </div>
+                            <div class="cart-items-details">
+                                <div class="cartproduct-discount">13
+                                    % OFF
+                                </div>
+                                <div class="cartproduct-name">Himalaya Complete Care Gum Expert Toothpaste</div>
+                                <div class="cartproduct-items">
+                                    <span class="cartnew-price">₹ 120.00</span>
+                                    <span class="cartold-price">₹ 139.00</span>
+                                    <div class="carttotel-price float-right">₹120</div>
+                                </div>
+                                <div class="addtocardbtnbox">
+                                    <button class="btn btn-sm btn-outline-blue ml-0 mb-0 pl-2 pr-2 waves-effect waves-light">
+                                        <i class="mdi mdi-basket mr-2"></i>Add to card
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-right ">
+                    <button type="button" class="btn-sm btn btn-secondary waves-effect waves-light"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                    <a type="button" class="btn-sm btn btn-info waves-effect waves-light">
+                        <i class="mdi mdi-basket mr-1"></i> Move to Card
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade right" id="student-instruction" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+         data-backdrop="true" aria-hidden="true">
+        <div class="modal-dialog modal-full-height modal-card modal-right modal-notify modal-info" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <b class="heading">Student Instruction</b>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true" class="white-text">×</span>
+                    </button>
+                </div>
+                <div class="cart-modalbody">
+                    <div class="instruction-txtbox">
+                        <p>Step 1 - Download question paper from Download and Upload Tab.</p>
+                        <p>Step 2 - Write your answers in your notebook</p>
+                        <p>Step 3 - Upload your answer in pdf format in Download and Upload section</p>
+                        <p>Step 4 - Check your results in result tab. Result will be given within 3-5
+                            Days</p>
+                    </div>
+                </div>
+                <div class="modal-footer justify-content-right ">
+                    <button type="button" class="btn-sm btn btn-secondary waves-effect waves-light"
+                            data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+<script type="text/javascript" src="js/popper.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="js/util.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/master.js"></script>
+<script type="text/javascript" src="js/animate-scroll.js"></script>
+<script type="text/javascript">
+    function viewcard() {
+        $('#mycard-popup').modal('show');
+    }
+
+    function viewlike() {
+        $('#mylike-popup').modal('show');
+    }
+
+    window.onload = function (e) {
+        setTimeout(function () {
+            //$('#loader-overlay').addClass('scale0');
+            $('#mainloader').hide();
+        }, 2000);
+    }
+    window.onscroll = function () {
+        //scrollFunction()
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 20) {
+            $('#top_navigation_bar').addClass('logowithmenu_bar_fixed');
+        } else {
+            $('#top_navigation_bar').removeClass('logowithmenu_bar_fixed');
+        }
+    }
+
+    $(document).click(function (e) {
+        $('#login-user-popup').removeClass('show');
+        $('#support-user-popup').removeClass('show');
+        //$('#view-setting-page').removeClass('show');
+        //$('#advance-search-page').removeClass('show');
+    })
+    $(document).ready(function () {
+        $('.support-block').click(function (e) {
+            $('#login-user-popup').removeClass('show');
+            let chkclass = $('#support-user-popup').attr('class');
+            if (chkclass == 'dropdown-menu pullDown user-seting-popup') {
+                $('#support-user-popup').addClass('show');
+            } else {
+                $('#support-user-popup').removeClass('show');
+            }
+            e.stopPropagation();
+        });
+        $('.user-login-block').click(function (e) {
+            $('#support-user-popup').removeClass('show');
+            let chkclass = $('#login-user-popup').attr('class');
+            if (chkclass == 'dropdown-menu pullDown user-seting-popup') {
+                $('#login-user-popup').addClass('show');
+            } else {
+                $('#login-user-popup').removeClass('show');
+            }
+            e.stopPropagation();
+        });
+    });
+</script>
+</body>
+</html>

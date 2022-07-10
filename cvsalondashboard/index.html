@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Chinnie & Vinnie Jabalpur Salon</title>
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/png" href="images/favicon.png"/>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/style.css"> 
+    <link rel="stylesheet" href="css/bootstrap.min.css"> 
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/dataTables.bootstrap4.css">
+</head>
+<body>
+
+  <header>
+        <nav class="navbar navbar-expand navbar-light topbar static-top">
+          <a href="#" class="logo"><img src="images/logo.png" ><!-- CHINNIE & VINNIE JABALPUR SALON --></a>
+          <!-- Sidebar Toggle (Topbar) -->
+          <button id="menu_icon" class="btn btn-link rounded-circle mr-3 varbtn">
+            <i class="fa fa-bars"></i>
+          </button>
+
+          <!-- Topbar Search -->
+         
+
+          <!-- Topbar Navbar -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown no-arrow">
+               <form class="d-none d-sm-inline-block form-inline mr-auto mt-3 ml-md-3 my-2 mw-100 navbar-search">
+            <div class="input-group">
+              <input type="text" class="form-control bg-default" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <button class="theme-btn" type="button">
+                  <i class="fa fa-search fa-sm"></i>
+                </button>
+              </div>
+            </div>
+          </form>
+            </li>
+            <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+            <li class="nav-item dropdown no-arrow d-sm-none">
+              <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-search fa-fw"></i>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-menu dropdown-menu-right p-3 shadow animated--grow-in" aria-labelledby="searchDropdown">
+                <form class="form-inline mr-auto w-100 navbar-search">
+                  <div class="input-group">
+                    <input type="text" class="form-control bg-light border-0 small" placeholder="Search for..." aria-label="Search" aria-describedby="basic-addon2">
+                    <div class="input-group-append">
+                      <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search fa-sm"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </li>
+
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle addbtn" href="#" id="userDropdown" role="button" data-toggle="modal" data-target="#addcustomer"><span style="background: #917758;
+    padding: 7px 20px; display: inline-block;
+    border-radius: 30px; color: #fff" >Add <b class="caret"></b></span>
+              </a>
+              <!-- Dropdown - User Information -->
+           <!--    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user fa-sm fa-fw mr-2 text-gray-400"></i>Change Branch</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>My Account</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-list fa-sm fa-fw mr-2 text-gray-400"></i>Support</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-list fa-sm fa-fw mr-2 text-gray-400"></i>GST Details</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="modal" data-target="#logoutModal">
+                  <i class="fa fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                  Logout
+                </a>
+              </div> -->
+            </li>
+
+            <!-- Nav Item - Messages -->
+            <li class="nav-item dropdown no-arrow mx-1">
+              <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fa fa-envelope fa-fw"></i>
+                <!-- Counter - Messages -->
+                <span class="badge badge-danger badge-counter">7</span>
+              </a>
+              <!-- Dropdown - Messages -->
+              <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                <h6 class="dropdown-header">
+                  Message Center
+                </h6>
+                <a class="dropdown-item d-flex align-items-center" href="#">
+                  <div class="dropdown-list-image mr-3">
+                    <img class="rounded-circle" src="images/photo.jpg" alt="">
+                    <div class="status-indicator bg-success"></div>
+                  </div>
+                  <div class="font-weight-bold">
+                    <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been having.</div>
+                    <div class="small text-gray-500">Emily Fowler · 58m</div>
+                  </div>
+                </a>
+               
+               
+                <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+              </div>
+            </li>
+
+            <div class="topbar-divider d-none d-sm-block"></div>
+
+            <!-- Nav Item - User Information -->
+            <li class="nav-item dropdown no-arrow">
+              <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img class="img-profile rounded-circle" src="images/photo.jpg">
+              </a>
+              <!-- Dropdown - User Information -->
+              <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                <a class="dropdown-item" href="#">
+                  <i class="fa fa-user mr-2"></i>Change Branch</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-cogs mr-2"></i>My Account</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-cog mr-2"></i>Support</a>
+                <a class="dropdown-item" href="#"><i class="fa fa-list mr-2"></i>GST Details</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"><i class="fa fa-sign-out mr-2"></i>Logout</a>
+              </div>
+            </li>
+
+          </ul>
+
+        </nav>  
+  </header> 
+ <div class="wrapper">
+   <div class="sidebar expandit">
+    <div class="profile-info">
+     <nav> 
+       <ul class="nav">
+          <li><a href="#" class=""><i class="fa fa-dashboard"></i><span>Dashboard</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-money"></i><span>Quick Sale</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-calendar"></i><span>Appointment</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-users"></i><span>Customers</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-paper-plane"></i><span>Campaigns</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-comment-o"></i><span>Feedback</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-file-text-o"></i><span>Online Booking</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-line-chart"></i><span>Reports</span></a></li>
+          <li><a href="#" class=""><i class="fa fa-life-ring"></i><span>Settings</span></a></li>
+        </ul>       
+      </nav>
+     </div> 
+   </div><!--./sidebar-->
+   <div class="main">
+    <div class="main-content">
+      <div class="container-fluid">
+         <div class="boxbody">
+            <ul class="nav nav-tabs2 nav-justified">
+              <li class="nav-item">
+                <a class="nav-link active" data-toggle="tab" href="#Customer">Customer Segment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Service">Service Segment</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" data-toggle="tab" href="#Upcoming">Upcoming Segment</a>
+              </li>
+            </ul>
+
+
+            <div class="tab-content">
+              <div class="tab-pane active" id="Customer">
+                <form class="formvisit">  
+                <div class="panelbox">
+                  <div class="toptext">Customer segmentation is a slice and dice of your customer database into relevant groups based on their purchases. frequency of visite and spending behaviour. Send targeted offer campaigns that are relevant to your customers to increases repeat business.</div>
+                  <div class="text-right mt-2 mb-2"><a href="#" class="theme-btn">New Customer</a></div>
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="metric clr-block-1">
+                        <h2>1</h2>
+                        <p>Existing Customers</p>
+                      </div><!--./metric-->
+                    </div><!--/col-lg-3-->
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="metric clr-block-2">
+                        <h2>0</h2>
+                        <p>Active Customers</p>
+                      </div><!--./metric-->
+                    </div><!--/col-lg-3-->
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="metric clr-block-3">
+                        <h2>0</h2>
+                        <p>Churm Prediction</p>
+                        <span>(Likely to be inactive)</span>
+                      </div><!--./metric-->
+                    </div><!--/col-lg-3-->
+
+                    <div class="col-lg-3 col-md-6 col-12">
+                      <div class="metric clr-block-4">
+                        <h2>0</h2>
+                        <p>Defected Customers</p>
+                        <span>(Inactive Customers)</span>
+                      </div><!--./metric-->
+                    </div><!--/col-lg-3-->
+                    <div class="col-lg-12 col-md-12 col-12">
+                      <h5>Customer Segmentation - Exsiting Customers</h5>
+                      <div class="toptext">Exsiting Customers - Customers who have visited your outlet at least once. Click on the customers to view 360<sup>o</sup> customer profile details</div>
+                    </div><!--/col-lg-12-->
+
+                     <div class="col-lg-6 col-md-12 col-12">
+                        <div class="form-group has-search mt-1">
+                          <span class="fa fa-search form-control-feedback"></span>
+                          <input type="text" class="form-control" placeholder="Search mobile number/customer id/email id/customer name">
+                        </div><!--./form-group-->
+                     </div><!--/col-lg-6-->
+
+                      <div class="col-lg-6 col-md-12 col-12">
+                       <div class="text-right mt-2 mb-2"><a href="#" class="outline-btn"><i class="fa fa-cog"></i> Filter Customer</a> <a href="#" class="theme-btn">Send Promotional Offer</a></div>
+                     </div><!--/col-lg-6-->
+                  
+                    <div class="col-lg-12 col-md-12 col-12"><div class="divider"></div></div><!--/col-lg-12-->    
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <div class="col-lg-6 col-md-12 col-12">
+                          <div class="form-group">
+                            <label>Visit Date</label>
+                            <div class="input-group mb-3">
+                           
+                            <input type="text" class="form-control datetimepicker" placeholder="">
+                             <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                            </div>
+                            <div class="input-group-prepend">
+                              <span class="input-group-text">To</span>
+                            </div>
+                            <input type="text" class="form-control datetimepicker" placeholder="">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                            </div>
+                          </div>
+                          </div>
+                        </div><!--./col-lg-4-->
+
+                        <div class="col-lg-6 col-md-12 col-12">
+
+                          <div class="form-group">
+                            <label>Visit Count</label>
+                             <div class="input-group mb-3">
+                                <input type="text" class="form-control"  placeholder="Number of visits">
+                                <div class="input-group-prepend">
+                                  <span class="input-group-text">To</span>
+                                </div>
+                              <input type="text" class="form-control" placeholder="Number of visits">
+                          </div>
+                          </div>
+                        </div><!--./col-lg-4-->
+
+                        <div class="col-lg-4 col-md-12 col-12">
+                          <div class="form-group">
+                            <label>Advance Filter</label>
+                            <select class="form-control">
+                              <option>Choose filters</option>
+                            </select>
+                          </div>
+                        </div><!--./col-lg-4-->
+
+                        <div class="col-lg-4 col-md-12 col-12">
+                          <div class="form-group">
+                            <label>Amount Date</label>
+                             <div class="input-group mb-2">
+                            <div class="input-group-prepend">
+                              <span class="input-group-text"><i class="fa fa-inr"></i></span>
+                            </div>
+                            <input type="text" class="form-control" placeholder="High value customer">
+                          </div>
+                          </div>
+                        </div><!--./col-lg-4-->
+                        <div class="col-lg-4 col-md-12 col-12">
+                          <div class="form-group">
+                            <label style="visibility: hidden;display: block;">Amount Date</label>
+                            <a href="#" class="theme-btn">Search</a>
+                          </div>
+                        </div><!--./col-lg-4-->
+                      </div><!--/row-->
+                    </div><!--./col-lg-6--> 
+                    
+                     <div class="col-lg-12 col-md-12 col-12"><div class="divider"></div></div><!--/col-lg-12-->
+                     <div class="col-lg-8 col-md-12 col-12">
+                       <div class="filtername">
+                         <p class="mb-0"><b>Name filter by:</b></p>
+                         <ul class="filterlist">
+                           <li><a href="#">A</a></li>
+                           <li><a href="#">B</a></li>
+                           <li><a href="#">C</a></li>
+                           <li><a href="#">D</a></li>
+                           <li><a href="#">E</a></li>
+                           <li><a href="#">F</a></li>
+                           <li><a href="#">G</a></li>
+                           <li><a href="#">H</a></li>
+                           <li><a href="#">I</a></li>
+                           <li><a href="#">J</a></li>
+                           <li><a href="#">K</a></li>
+                           <li><a href="#">L</a></li>
+                           <li><a href="#">M</a></li>
+                           <li><a href="#">N</a></li>
+                           <li><a href="#">O</a></li>
+                           <li><a href="#">P</a></li>
+                           <li><a href="#">Q</a></li>
+                           <li><a href="#">R</a></li>
+                           <li><a href="#">S</a></li>
+                           <li><a href="#">T</a></li>
+                           <li><a href="#">U</a></li>
+                           <li><a href="#">V</a></li>
+                           <li><a href="#">W</a></li>
+                           <li><a href="#">X</a></li>
+                           <li><a href="#">Y</a></li>
+                           <li><a href="#">Z</a></li>
+                           <li><a href="#">All</a></li>
+                         </ul>
+                       </div><!--./filtername-->
+                     </div><!--/col-lg-6-->
+                     <div class="col-lg-4 col-md-12 col-12">
+                        <div class="text-right mt-2 mb-2"><a href="#" class="theme-btn">Download cusomer database</a></div>
+                     </div><!--/col-lg-4-->
+
+                   <div class="col-lg-12 col-md-12 col-12 mt-3">
+                     <h6><i class="fa fa-tasks"></i> Customer Count 1</h6>
+                      <div class="table-responsive">
+                    <table class="table table-bordered table-striped recent-purchases-listing">
+                      <thead>
+                        <tr>
+                            <td>Customer Name & ID</td>
+                            <td>Email Id & Mobile</td>
+                            <td>Purchase Value</td>
+                            <td>Visit Count</td>
+                            <td>Last Visited Date</td>
+                            <td>Since Last Visit</td>
+                             <td><div class="form-group form-check">
+             
+                                <input class="form-check-input" type="checkbox"> Select All
+       
+                              <i class="fa fa-trash-o"></i>
+                            </div>
+
+                          </td>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                            <td>Jeremy Ortega</td>
+                            <td>Levelled up</td>
+                            <td>Catalinaborough</td>
+                            <td>$790</td>
+                            <td>06 Jan 2018</td>
+                            <td>$2274253</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Alvin Fisher</td>
+                            <td>Ui design completed</td>
+                            <td>East Mayra</td>
+                            <td>$23230</td>
+                            <td>18 Jul 2018</td>
+                            <td>$83127</td>
+                            <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Emily Cunningham</td>
+                            <td>support</td>
+                            <td>Makennaton</td>
+                            <td>$939</td>
+                            <td>16 Jul 2018</td>
+                            <td>$29177</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Minnie Farmer</td>
+                            <td>support</td>
+                            <td>Agustinaborough</td>
+                            <td>$30</td>
+                            <td>30 Apr 2018</td>
+                            <td>$44617</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Betty Hunt</td>
+                            <td>Ui design not completed</td>
+                            <td>Lake Sandrafort</td>
+                            <td>$571</td>
+                            <td>25 Jun 2018</td>
+                            <td>$78952</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Myrtie Lambert</td>
+                            <td>Ui design completed</td>
+                            <td>Cassinbury</td>
+                            <td>$36</td>
+                            <td>05 Nov 2018</td>
+                            <td>$36422</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Jacob Kennedy</td>
+                            <td>New project</td>
+                            <td>Cletaborough</td>
+                            <td>$314</td>
+                            <td>12 Jul 2018</td>
+                            <td>$34167</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Ernest Wade</td>
+                            <td>Levelled up</td>
+                            <td>West Fidelmouth</td>
+                            <td>$484</td>
+                            <td>08 Sep 2018</td>
+                            <td>$50862</td>
+                             <td><div class="form-group form-check">
+                                <input class="form-check-input" type="checkbox">
+                              </div>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                     
+                   </div><!--/col-lg-12--> 
+                  </div><!--./row-->
+                 
+                </div><!--./panelbox-->
+               </form>    
+              </div><!--./Customer-->
+              <div class="tab-pane fade" id="Service">
+                <div class="panelbox">
+                  <h5>Service Segment</h5>
+                </div><!--./panelbox-->
+              </div><!--./Service-->
+              <div class="tab-pane fade" id="Upcoming">
+                 <div class="panelbox">
+                  <h5>Upcoming Segment</h5>
+                </div><!--./panelbox-->
+              </div><!--./Upcoming-->
+            </div><!--./tab-content-->
+         </div><!--./boxbody-->
+       </div><!--./container-fluid--> 
+      <footer>Copyright © 2020 Chinnie & Vinnie Jabalpur Salon. All rights reserved.</footer> 
+     </div><!--./main-content-->
+      
+   </div><!--./main-->
+ </div><!--./wrapper-->
+
+ <!-- The Modal -->
+<div class="modal" id="addcustomer">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Add Customer</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body formvisit">
+        <div class="row">
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Mobile Number</label>
+                <div class="input-group mb-3">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text">+91</span>
+                  </div>
+                  <input type="text" class="form-control" placeholder="1234567890">
+                </div>
+              </div>
+          </div><!--./col-lg-4-->
+
+           <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Customer Name</label>
+                <input type="text" class="form-control" placeholder="Priyansh Khatri">
+              </div>
+          </div><!--./col-lg-4-->
+
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Customer ID</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+          </div><!--./col-lg-4-->
+
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Email ID</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+          </div><!--./col-lg-4-->
+
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>DOB</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+          </div><!--./col-lg-4-->
+
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Aniversary</label>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control datetimepicker" placeholder="">
+                <div class="input-group-append">
+                  <span class="input-group-text"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+                <!-- <input type="text" class="form-control" placeholder=""> -->
+              </div>
+          </div><!--./col-lg-4-->
+
+           <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Location</label>
+                <input type="text" class="form-control" placeholder="">
+              </div>
+          </div><!--./col-lg-4-->
+
+           <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label>Source</label>
+                <select class="form-control">
+                  <option>Choose Source Name</option>
+                </select>
+              </div>
+          </div><!--./col-lg-4-->
+
+          <div class="col-lg-4 col-md-12 col-12">
+             <div class="form-group">
+                <label style="display: block;">Gender</label>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Male
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="radio" class="form-check-input" name="optradio">Female
+                  </label>
+                </div>
+              </div>
+          </div><!--./col-lg-4-->
+
+           <div class="col-lg-6 col-md-12 col-12">
+             <div class="form-group">
+                <label>Address</label>
+                <textarea class="form-control"></textarea>
+              </div>
+          </div><!--./col-lg-6-->
+
+          <div class="col-lg-6 col-md-12 col-12">
+             <div class="form-group">
+                <label>Customer Note</label>
+                <textarea class="form-control"></textarea>
+              </div>
+          </div><!--./col-lg-6-->
+
+          <div class="col-lg-12 col-md-12 col-12">
+             <div class="form-group">
+                <label style="display: block;">Send  SMS Type</label>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Send Promotional SMS
+                  </label>
+                </div>
+                <div class="form-check-inline">
+                  <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input" value="">Send Transactional SMS
+                  </label>
+                </div>
+              </div>
+          </div><!--./col-lg-6-->
+        </div><!--./row-->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="outline-btn" data-dismiss="modal">Cancel</button> <button type="button" class="theme-btn" data-dismiss="modal">Save</button>
+      </div>
+    </div>
+  </div>
+</div><!--#/addcustomer-->
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/easing.min.js"></script>
+   <script src="js/jquery.dataTables.js"></script>
+  <script src="js/dataTables.bootstrap4.js"></script>
+  <script type="text/javascript" src="js/bootstrap-datetimepicker.js"></script>
+  <script src="js/main.js"></script>
+  <script type="text/javascript">
+     $('.recent-purchases-listing').DataTable({
+      "aLengthMenu": [
+        [5, 10, 15, -1],
+        [5, 10, 15, "All"]
+      ],
+      "iDisplayLength": 10,
+      "language": {
+        search: ""
+      },
+      searching: false, paging: false, info: false
+    });
+  </script>
+</body>
+</html>

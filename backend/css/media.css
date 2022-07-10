@@ -1,0 +1,241 @@
+@media (min-width: 320px) and (max-width: 992px) {
+    .services_section
+    {
+        padding: 0px 15px;
+    }
+    .service-img-box
+    {
+        margin: 10px 0px;
+    }
+    .res_pad0 {
+        padding: 0px;
+    }
+    .news-banner-txt-block
+    {
+        display: none;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 767px) {
+    .related_service_box
+    {
+        margin-top: 15px;
+    }
+    .res_small_margin
+    {
+        margin: 15px 0px !important;
+    }
+    .quote
+    {
+        margin-top: 20px;
+    }
+    .news-banner-section
+    {
+        padding: 20px;
+        min-height: 200px;
+    }
+    .service-banner-img
+    {
+        width: 96%;
+        left: 2%;
+        position: relative;
+        bottom: 0px;
+    }
+    .video-banner-img
+    {
+        width: 96%;
+        left: 2%;
+        position: relative;
+        bottom: 0px;
+    }
+    .about-banner-img
+    {
+        width: 96%;
+        left: 2%;
+        position: relative;
+        bottom: 0px;
+    }
+    .subhead_txt
+    {
+        font-size: 16px;
+    }
+    .contact_txt
+    {
+        font-size: 18px;
+        margin: 0px !important;
+    }
+    .serv-section-2
+    {
+        margin-top: 15px;
+    }
+    .contact_section
+    {
+        padding: 0px;
+    }
+    .header_main_text
+    {
+        position: relative;
+        margin: 0px;
+        left: 0px;
+        width: calc(100% - 100px);
+        float: left;
+        padding-top: 5px;
+    }
+    .header_main_text h2 {
+        font-size: 28px;
+    }
+    .header_main_text p {
+        font-size: 14px;
+        margin-bottom: 0px;
+    }
+    .header-contact-details
+    {
+        width: calc(100% - 100px);
+        margin: 0px;
+    }
+    .nav-contact-info {
+        margin: 0px 0px 0px;
+        line-height: 18px;
+        font-size: 14px;
+    }
+    .nav-contact-info i {
+        font-size: 14px;
+    }
+    .top_menu_ul li:after
+    {
+        margin: 0px 10px;
+    }
+    .header_res_pad0 {
+        padding: 0px 5px;
+    }
+    .mainbanner-caption
+    {
+        top: 30px;
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+    }
+    .mainbanner-caption h1
+    {
+        font-size: 28px;
+    }
+    .mainbanner-caption h4
+    {
+        font-size: 16px;
+        margin-top: 5px;
+    }
+    .ban_next {
+        right: -15px;
+    }
+    .ban_slider_arrow span {
+        font-size: 50px;
+        line-height: 50px;
+        margin-top: 80px;
+    }
+    .about_section
+    {
+        padding: 0px;
+    }
+    .pre-title {
+        font-size: 20px;
+    }
+    .about_txt_block h2
+    {
+        font-size: 20px;
+        margin-bottom: 5px;
+    }
+    .about_txt_block p {
+        font-size: 14px;
+    }
+    .about_card
+    {
+        margin-bottom: 20px;
+    }
+    .about_text p
+    {
+        font-size: 14px;
+    }
+    .menu_header
+    {
+        background: #ffffff;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 576px) {
+
+}
+
+@media (min-width: 577px) and (max-width: 767px) {
+
+}
+
+@media (min-width: 320px) and (max-width: 360px) {
+    .nav-contact-info
+    {
+        font-size: 12px;
+    }
+    .top_menu_ul li:after {
+        margin: 0px 5px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    .top-right {
+        margin-right: -30px;
+    }
+    .nav-contact-info
+    {
+        line-height: 18px;
+        font-size: 14px;
+         margin-top: 10px;
+    }
+    .header_main_text {
+        width: 350px;
+        margin-left: -200px;
+    }
+
+    .header_main_text p {
+        font-size: 18px;
+        margin-bottom: 0px;
+    }
+
+    .header_main_text h2 {
+        font-size: 30px;
+    }
+    .mainbanner-caption
+    {
+        top: 50px;
+        width: 100%;
+        margin-left: 0px;
+        left: 0px;
+    }
+    .mainbanner-caption h1
+    {
+        font-size: 48px;
+    }
+    .mainbanner-caption h4
+    {
+        font-size: 20px;
+    }
+    .about_section
+    {
+        padding: 0px;
+    }
+}
+
+@media (min-width: 993px) and (max-width: 1199px) {
+    .about_section
+    {
+        padding: 0px 0px 0px 10px;
+    }
+    .video-banner-img
+    {
+        bottom: 70px;
+        max-width: 500px;
+        left: 50px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1360px) {
+
+}
