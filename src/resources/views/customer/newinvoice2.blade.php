@@ -218,7 +218,7 @@
                                             $combo_row='<tr><td><strong>Combo Total</strong></td><td></td><td><i class="fa fa-inr"></i> '.$curr_combo_price.'</td></tr>';
                                             $combo_count+=1;
                                             $combo_service='yes';
-                                            $price_row='-';
+                                            $price_row=$service->total_price;
                                         }
                                         else{
                                             $combo_service='not';

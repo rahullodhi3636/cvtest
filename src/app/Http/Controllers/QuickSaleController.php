@@ -455,7 +455,7 @@ class QuickSaleController extends Controller
         $subtotalamount = $request->subtotalamount;
         $totalinputSgst = $request->totalinputSgst;
         $totalinputCgst = $request->totalinputCgst;
-        $totalinputComposition = $request->totalinputComposition;
+        $totalinputComposition = ($request->totalinputComposition!="NaN")?$request->totalinputComposition:0;
         $totalgstdiscount = ($request->totalgstdiscount!='' && $request->totalgstdiscount!="NaN")?$request->totalgstdiscount:0;
         $totalgrandTotal = $request->totalgrandTotal;
         $payLater = $request->payLater;
@@ -844,8 +844,8 @@ class QuickSaleController extends Controller
                             'discount' => $service[$i]['serviceDisc'],
                             'cgst' => $service[$i]['servicesCgst'],
                             'sgst' => $service[$i]['servicesSgst'],
-                            'gstdiscount' => $service[$i]['servicesgstdiscount'],
-                            'composition' => $service[$i]['servicesComposition'],
+                            'gstdiscount' => ($service[$i]['servicesgstdiscount']!='')?$service[$i]['servicesgstdiscount']:0,
+                            'composition' => ($service[$i]['servicesComposition']!='')?$service[$i]['servicesComposition']:0,
                             'total_price' => $service[$i]['serviceTotal'],
                             'other_service_id' => $request->other_service_invoice_id,
                             'free_service' => ($service[$i]['free_service'])?$service[$i]['free_service']:0,
