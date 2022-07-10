@@ -621,6 +621,7 @@ class QuickSaleController extends Controller
                     $remaining->save();
                 }
 
+
                 if ($productRowCount != 0) {
                     for ($i = 0; $i < $productRowCount; $i++) {
                         $invoiceproduct = new InvoiceProductModel([
