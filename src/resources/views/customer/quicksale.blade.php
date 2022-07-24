@@ -345,18 +345,18 @@
                               <td>Sub Total Amount:</td>
                               <td><i class="fa fa-inr"></i> <input type="hidden" name="subtotalamount" id="subtotalamount"><span id="subtotal">0.00</span></td>
                             </tr>
-                            <tr>
+                            <tr id="cgst_row">
                               <td>CGST:</td>
                               <td><i class="fa fa-inr"></i> <input type="hidden" name="totalinputSgst" id="totalinputSgst"><span id="totalsgstval">0.00</span></td>
                             </tr>
-                            <tr>
+                            <tr id="sgst_row">
                               <td>SGST:</td>
                               <td><i class="fa fa-inr"></i> <input type="hidden" name="totalinputCgst" id="totalinputCgst"><span id="totalcgstval">0.00</span></td>
                             </tr>
-                            <tr>
+                            {{-- <tr>
                                 <td>Composition:</td>
                                 <td><i class="fa fa-inr"></i> <input type="hidden" name="totalinputComposition" id="totalinputComposition"><span id="totalcompositionval">0.00</span></td>
-                            </tr>
+                            </tr> --}}
                             <tr>
                                 <td>GST Discount:</td>
                                 <td><i class="fa fa-inr"></i> <input type="hidden" name="totalgstdiscount" id="totalgstdiscount"><span id="totalgstdiscountval">0.00</span></td>
@@ -2434,16 +2434,18 @@ function showHistoryVisit()
         if(qty==''){qty=0;}
         var total = parseFloat(price) * parseFloat(qty);
         // var totaldiscount = (parseFloat(total).toFixed(2) * parseFloat(disc).toFixed(2))/100;
-        if(gstdiscount!=0){
-          var gstdiscount = (parseFloat(total) * parseFloat(gstdiscount))/100;
-        }
 
 
 
-        var totaldiscount= parseFloat(disc)+parseFloat(gstdiscount);
+
+        var totaldiscount= parseFloat(disc);
         total = parseFloat(total) + parseFloat(totaldiscount);
         // total = parseFloat(total) + parseFloat(totaldiscount);
         $("#servicePriceTotal"+count).val(parseFloat(total).toFixed(2));
+
+        if(gstdiscount!=0){
+          gstdiscount = (parseFloat(total) * parseFloat(gstdiscount))/100;
+        }
 
         var totalsgst = (parseFloat(total) * parseFloat(sgst))/100;
         var totalcgst = (parseFloat(total) * parseFloat(cgst))/100;
@@ -2453,7 +2455,7 @@ function showHistoryVisit()
             composition = (parseFloat(total) * parseFloat(composition_persent))/100;
         }
 
-        total = parseFloat(total) + parseFloat(totalsgst) + parseFloat(totalcgst) + parseFloat(composition);
+        total = parseFloat(total) + parseFloat(totalsgst) + parseFloat(totalcgst) + parseFloat(composition)-parseFloat(gstdiscount);
         $("#serviceTotal"+count).val(parseFloat(total).toFixed(2));
         $("#servicePrice"+count).val(parseFloat(price).toFixed(2));
         /*$("#totalsgstval").html(parseFloat(totalsgst));
@@ -2491,15 +2493,11 @@ function showHistoryVisit()
         if(qty==''){qty=0;}
         var total = parseFloat(price) * parseFloat(qty);
         // var totaldiscount = (parseFloat(total).toFixed(2) * parseFloat(disc).toFixed(2))/100;
-        if(gstdiscount!=0){
-          var gstdiscount = (parseFloat(total) * parseFloat(gstdiscount))/100;
-        }
 
-
-
-
-        var totaldiscount= parseFloat(disc)+parseFloat(gstdiscount);
+        //var totaldiscount= parseFloat(disc)+parseFloat(gstdiscount);
+        var totaldiscount= parseFloat(disc);
         total = parseFloat(total) - parseFloat(totaldiscount);
+
         $("#servicePriceTotal"+count).val(parseFloat(price).toFixed(2));
         var totalsgst = (parseFloat(total) * parseFloat(sgst))/100;
         var totalcgst = (parseFloat(total) * parseFloat(cgst))/100;
@@ -2509,7 +2507,11 @@ function showHistoryVisit()
             composition = (parseFloat(total) * parseFloat(composition_persent))/100;
         }
 
-        total = parseFloat(total) + parseFloat(totalsgst) + parseFloat(totalcgst) + parseFloat(composition);
+        if(gstdiscount!=0){
+            gstdiscount = (parseFloat(total) * parseFloat(gstdiscount))/100;
+        }
+
+        total = parseFloat(total) + parseFloat(totalsgst) + parseFloat(totalcgst) + parseFloat(composition)-parseFloat(gstdiscount);
 
         $("#serviceTotal"+count).val(parseFloat(total).toFixed(2));
         /*$("#totalsgstval").html(parseFloat(totalsgst));

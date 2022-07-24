@@ -135,6 +135,20 @@
 
                 <div class="col-lg-4 col-md-12 col-12">
                     <div class="form-group">
+                        <label  for="gst_no">GST Number</label>
+                        <input type="text"  id="gst_no" name="gst_no" value="{{ old('gst_no') }}" placeholder="Enter Gst number"  class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="form-group">
+                        <label  for="composition_gst_no">Composition GST Number</label>
+                        <input type="text"  id="composition_gst_no" name="composition_gst_no" value="{{ old('composition_gst_no') }}" placeholder="Enter composition GST number"  class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="form-group">
                         <label  for="cgst">CGST %<span class="required">*</span></label>
                         <input type="number"  id="cgst" name="cgst" value="{{ old('cgst') }}" placeholder="Enter cgst percent"  class="form-control">
                     </div>
@@ -209,6 +223,17 @@
                       </select>
                     </div>
                 </div><!--./col-lg-4-->
+
+                <div class="col-lg-12 col-md-12 col-12">
+                    <div class="form-group">
+                        <label  for="phone">Composition Description
+                        </label>
+
+                        <input type="text"  id="add_composition_description" name="composition_description" value="{{ old('composition_description') }}" placeholder="Enter composition description"  class="form-control ">
+
+                    </div>
+                </div>
+
               </div><!--./row-->
             </div>
             <div class="modal-footer">
@@ -246,6 +271,20 @@
                   <input id="editlocation" name="editlocation" value="{{ old('location') }}" placeholder="Enter firm location" type="text" class="form-control">
                 </div>
             </div><!--./col-lg-4-->
+
+            <div class="col-lg-4 col-md-12 col-12">
+                <div class="form-group">
+                    <label  for="gst_no">GST Number</label>
+                    <input type="text"  id="edit_gst_no" name="gst_no" value="{{ old('gst_no') }}" placeholder="Enter Gst number"  class="form-control">
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-12 col-12">
+                <div class="form-group">
+                    <label  for="composition_gst_no">Composition GST Number</label>
+                    <input type="text"  id="edit_composition_gst_no" name="composition_gst_no" value="{{ old('composition_gst_no') }}" placeholder="Enter composition GST number"  class="form-control">
+                </div>
+            </div>
 
             <div class="col-lg-4 col-md-12 col-12">
                <div class="form-group">
@@ -327,6 +366,17 @@
                   </select>
                 </div>
             </div><!--./col-lg-4-->
+
+            <div class="col-lg-12 col-md-12 col-12">
+                <div class="form-group">
+                    <label  for="phone">Composition Description
+                    </label>
+
+                    <input type="text"  id="edit_composition_description" name="composition_description" value="{{ old('composition_description') }}" placeholder="Enter composition description"  class="form-control ">
+
+                </div>
+            </div>
+
           </div><!--./row-->
         </div>
         <div class="modal-footer">
@@ -409,6 +459,9 @@
           $("#edit_sgst").val(res.sgst);
           $("#edit_cgst").val(res.cgst);
           $("#edit_composition").val(res.composition);
+          $("#edit_gst_no").val(res.gst_no);
+          $("#edit_composition_gst_no").val(res.composition_gst_no);
+          $("#edit_composition_description").val(res.composition_description);
           //$("#edit_gst_status").val(res.gst_status);
           $('#edit_gst_status option[value='+res.gst_status+']').attr('selected','selected');
           $('#edit_gst_discount option[value='+res.gst_discount+']').attr('selected','selected');

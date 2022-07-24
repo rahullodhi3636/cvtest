@@ -202,6 +202,8 @@
                                     $discount = 0;
                                     $totalgst= 0;
                                     $totalprice = 0;
+                                    $tcgst = 0;
+                                    $tsgst = 0;
 
                                     $combo_count=0;
                                     $combo_row='';
@@ -239,7 +241,8 @@
                                     $service->service_duration=$checkother[0]->service_duration;
                                 }
                             }
-
+                            $tcgst += $service->cgst;
+                            $tsgst += $service->sgst;
 
                             $tgst = $service->cgst+$service->sgst;
                             $price += $service->price+$service->service_add;
@@ -294,12 +297,27 @@
                                 $extra_discount = $invoicedata->total_discount_value;
                              }
                             @endphp
-
+                            @if($tcgst>0)
+                            <tr>
+                                <td class="emptyrow text-center" colspan="3"><strong>Total CGST </strong></td>
+                                <td class="emptyrow"></td>
+                                <td class="emptyrow text-right"><i class="fa fa-inr"></i>
+                                    <?php echo $tcgst; ?></td>
+                            </tr>
+                            @endif
+                            @if($tsgst>0)
+                            <tr>
+                                <td class="emptyrow text-center" colspan="3"><strong>Total SGST </strong></td>
+                                <td class="emptyrow"></td>
+                                <td class="emptyrow text-right"><i class="fa fa-inr"></i>
+                                    <?php echo $tsgst; ?></td>
+                            </tr>
+                            @endif
 
 
                             @if($totalgst>0)
                             <tr>
-                                <td class="emptyrow text-center" colspan="3"><strong>Total gst </strong></td>
+                                <td class="emptyrow text-center" colspan="3"><strong>Total GST </strong></td>
                                 <td class="emptyrow"></td>
                                 <td class="emptyrow text-right"><i class="fa fa-inr"></i>
                                     <?php echo $totalgst; ?></td>

@@ -11,6 +11,8 @@ class Firm extends Model
     protected $fillable = [
         'firm_name',
         'firm_location',
+        'composition_gst_no',
+        'gst_no',
         'firm_number',
         'cgst',
         'sgst',

@@ -69,7 +69,10 @@ class FirmController extends Controller
                 'gst_status' => $request->get('gst_status'),
                 'gst_discount' => $request->get('gst_discount'),
                 'composition' => $request->get('composition'),
+                'composition_gst_no' => $request->get('composition_gst_no'),
+                'gst_no' => $request->get('gst_no'),
                 'composition_status' => $request->get('composition_status'),
+                'composition_description' => $request->get('composition_description'),
                 'status' => $request->get('status')
             ]);
 
@@ -149,7 +152,8 @@ class FirmController extends Controller
         $firm = firm::find($id);
         $firm->firm_name =  $request->get('editname');
         $firm->firm_location =  $request->get('editlocation');
-        $firm->firm_number =  $request->get('editphone');
+        $firm->composition_gst_no =  $request->get('composition_gst_no');
+        $firm->gst_no =  $request->get('gst_no');
         $firm->status = $request->get('editstatus');
         $firm->cgst = $request->get('cgst');
         $firm->sgst = $request->get('sgst');
@@ -157,6 +161,7 @@ class FirmController extends Controller
         $firm->gst_discount = $request->get('gst_discount');
         $firm->composition = $request->get('composition');
         $firm->composition_status = $request->get('composition_status');
+        $firm->composition_description = $request->get('composition_description');
         $firm->save();
         $firms = Firm::all();
         if (!empty($firms)) {
