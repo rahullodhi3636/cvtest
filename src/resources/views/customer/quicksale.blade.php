@@ -353,10 +353,10 @@
                               <td>SGST:</td>
                               <td><i class="fa fa-inr"></i> <input type="hidden" name="totalinputCgst" id="totalinputCgst"><span id="totalcgstval">0.00</span></td>
                             </tr>
-                            {{-- <tr>
+                            <tr>
                                 <td>Composition:</td>
                                 <td><i class="fa fa-inr"></i> <input type="hidden" name="totalinputComposition" id="totalinputComposition"><span id="totalcompositionval">0.00</span></td>
-                            </tr> --}}
+                            </tr>
                             <tr>
                                 <td>GST Discount:</td>
                                 <td><i class="fa fa-inr"></i> <input type="hidden" name="totalgstdiscount" id="totalgstdiscount"><span id="totalgstdiscountval">0.00</span></td>

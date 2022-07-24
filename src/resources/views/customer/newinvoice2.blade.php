@@ -120,7 +120,7 @@
         <?php
 
                         // echo '<pre>';
-                        // print_r($invoicedata);
+                        // print_r($firm);
                         // echo '</pre>';
                         // exit();
 
@@ -178,6 +178,12 @@
                         <br> {{ $invoicedata->email }}
                         <br>{{ $invoicedata->contact }}
                     </p>
+                    @if($firm->gst_status==1)
+                    <p class="centered"> GST No:-{{ $firm->gst_no }} </p>
+                    @endif
+                    @if($firm->composition_status==1)
+                    <p class="centered"> Composition GST No:-{{ $firm->composition_gst_no }} </p>
+                    @endif
 
                     <p class="centered"> Invoice No:-{{ $invoicedata->invoice_id }} </p>
                     <p class="centered"> Invoice Date:-{{ date('d-m-Y h:i:s a',strtotime($invoicedata->invoice_time)) }} </p>
@@ -297,6 +303,7 @@
                                 $extra_discount = $invoicedata->total_discount_value;
                              }
                             @endphp
+                            @if($firm->composition_status==0)
                             @if($tcgst>0)
                             <tr>
                                 <td class="emptyrow text-center" colspan="3"><strong>Total CGST </strong></td>
@@ -323,6 +330,8 @@
                                     <?php echo $totalgst; ?></td>
                             </tr>
                             @endif
+                            @endif  {{--ENd composition status if--}}
+
                             <tr>
                                 <td class="emptyrow text-center" colspan="3"><strong>Subtotal </strong></td>
                                 <td class="emptyrow"></td>

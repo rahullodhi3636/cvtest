@@ -1032,9 +1032,14 @@ class QuickSaleController extends Controller
             ->where('I.invoice_id', $invoiceid)
             ->first();
          $is_estimate = $invoicedata->is_estimate;
+         $firm_id = $invoicedata->firm_id;
+         $firm = Firm::find($firm_id);
 
-
-        return view('customer.newinvoice2', compact('invoicedata','is_estimate'));
+// echo '<pre>';
+//                         print_r($firm);
+//                         echo '</pre>';
+//                         exit();
+        return view('customer.newinvoice2', compact('invoicedata','is_estimate','firm'));
     }
 
 
